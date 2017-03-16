@@ -1,10 +1,16 @@
+body {
+    background-color: #F2F2F2;
+}
+
 .main-page {
-    border-top: 5px solid #5C3566;
     background-color: #F2F2F2;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (max-width: 768px) {
+
+/* Portrait tablets and small desktops */
+
+@media (max-width: 767px) {
     .title-page {
         text-align: center;
     }
@@ -12,6 +18,19 @@
         margin: -15px 0;
         padding: 0;
         background-color: #fff;
+    }
+    .glyphicon-plus-sign {
+        font-size: 30px;
+    }
+    .add_test {
+        padding: 10px;
+        text-align: center;
+        color: #fff;
+        border-radius: 100%;
+        background-color: #0092DF;
+        position: fixed;
+        top: 150px;
+        left: 92%;
     }
 }
 
@@ -38,6 +57,7 @@
 
 .header-page {
     background-color: #363636;
+    border-top: 5px solid #5C3566;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
@@ -71,6 +91,10 @@
 .dropdown-menu>li>a:hover {
     background-color: #0092DF;
     color: #fff;
+}
+
+.img-circle {
+    border: 5px solid #5C3566;
 }
 
 .content-page {
@@ -121,4 +145,81 @@
     color: #fff;
     text-align: center;
     margin-top: 10px;
+}
+
+
+/*---------------Tao de thi -------------------*/
+
+.glyphicon-plus-sign {
+    font-size: 50px;
+}
+
+.add_test {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 100%;
+    background-color: #0092DF;
+    position: fixed;
+    top: 150px;
+    left: 92%;
+}
+
+.create-modal {
+    border-radius: 0;
+}
+
+.create-modal>.modal-header h4 {
+    border-top: 5px solid #5C3566;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 0;
+    background-color: #0092DF;
+    color: #fff;
+}
+
+.create-modal>.modal-header button {
+    margin: 15px;
+    color: #ffffff;
+}
+
+.close {
+    opacity: 1;
+}
+
+.create-modal>.modal-header {
+    padding: 0;
+}
+
+.thumbnail-create {
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.thumbnail-create>p {
+    font-size: 100px;
+    color: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    background-color: #0092DF;
+    border: 5px solid #5C3566;
+    cursor: pointer;
+}
+
+.create-body {
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.row-create {
+    margin-bottom: 25px;
+}
+
+.add-question {
+    color: mediumseagreen;
 }
