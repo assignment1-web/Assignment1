@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/book.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-12" style="margin-top: 10px">
+            <div class="col-md-12"><!------------------------------------SEARCH REGION-->
+                <div class="search-box">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="input-group" id="adv-search">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm" />
+                                <div class="input-group-btn">
+                                    <div class="btn-group" role="group">
+                                        <div class="dropdown dropdown-lg">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                                <form class="form-horizontal" role="form">
+                                                    <div class="form-group">
+                                                        <label for="search-sort-by">Sắp xếp theo</label>
+                                                        <select class="form-control" id="search-sort-by">
+                                                            <option value="0" selected>Ngày cập nhật</option>
+                                                            <option value="1">Nhiều lượt xem</option>
+                                                            <option value="2">Số câu</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="search-ft-by-time">Ngày cập nhật</label>
+                                                        <select class="form-control" id="search-ft-by-time">
+                                                            <option value="0" selected>Bất kỳ lúc nào</option>
+                                                            <option value="1">24 giờ qua</option>
+                                                            <option value="2">Tuần qua</option>
+                                                            <option value="3">Tháng qua</option>
+                                                            <option value="4">Năm qua</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="search-author">Tác giả</label>
+                                                        <input class="form-control" type="text" id="search-author"/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="search-ft-topic">Chủ đề</label>
+                                                        <input class="form-control" type="text" id="search-ft-topic"/>
+                                                    </div>
+<!--
+                                                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+-->
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!---------------------------------END SEARCH BOX-->
+
+                <div class="content-info" style="margin-left: 18px; margin-top: 20px; padding-top: 20px;">
+                    <p>Trang 1 trên tổng 12000 kết quả khớp với từ khóa "De thi mac lenin"</p>
+                </div>
+
+                <div class="type-book" style="margin-top: 10px;">
+                    <div class="category-book"><!-------------------------ROW------------>
+                        <div class="book_item book col-md-3"><!----------------------BOOOK ITEM---------->
+                            <div class="img-hover">
+                                    <div class="thumbnail">
+                                      <a href="#"><img class="img_book_thumb" src="images/book_item_11.jpg" alt="Book thumbnail"></a>
+                                        <div class="caption">
+                                            <a class="card-text book-author" href="#">Superman Library</a><br>
+                                            <a class="card-text book-title" href="#"> 10000 Câu trắc nghiệm mác lênin thần thánh</a>
+                                            <p class="book-extra-info">3w ago, 37,857 views</p>
+<!--
+                                            <div class="divider"></div>
+-->
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                        <div class="book_item book col-md-3"><!----------------------BOOOK ITEM---------->
+                            <div class="img-hover">
+                                <div class="thumbnail">
+                                    <a href="#"><img class="img_book_thumb" src="images/thumb_mac_le.jpg" alt="Book thumbnail"></a>
+                                    <div class="caption">
+                                        <a class="card-text book-author" href="#">Superman Library</a><br>
+                                        <a class="card-text book-title" href="#"> 10000 Câu trắc nghiệm mác lênin thần thánh</a>
+                                        <p class="book-extra-info">3w ago, 37,857 views</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book_item book col-md-3"><!----------------------BOOOK ITEM---------->
+                            <div class="img-hover">
+                                <div class="thumbnail">
+                                    <a href="#"><img class="img_book_thumb" src="images/dapantracnghiemdecuong-151210035321-thumbnail-3.jpg" alt="Book thumbnail"></a>
+                                    <div class="caption">
+                                        <a class="card-text book-author" href="#">Superman Library</a><br>
+                                        <a class="card-text book-title" href="#"> 10000 Câu trắc nghiệm mác lênin thần thánh</a>
+                                        <p class="book-extra-info">3w ago, 37,857 views</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book_item book col-md-3"><!----------------------BOOOK ITEM---------->
+                            <div class="img-hover">
+                                <div class="thumbnail">
+                                    <a href="#"><img class="img_book_thumb" src="images/thumb_tamly_hh.jpg" alt="Book thumbnail"></a>
+                                    <div class="caption">
+                                        <a class="card-text book-author" href="#">Superman Library</a><br>
+                                        <a class="card-text book-title" href="#"> 10000 Câu trắc nghiệm mác lênin thần thánh</a>
+                                        <p class="book-extra-info">3w ago, 37,857 views</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book_item book col-md-3"><!----------------------BOOOK ITEM---------->
+                            <div class="img-hover">
+                                <div class="thumbnail">
+                                    <a href="#"><img class="img_book_thumb" src="images/thumb_tamly_hh.jpg" alt="Book thumbnail"></a>
+                                    <div class="caption">
+                                        <a class="card-text book-author" href="#">Superman Library</a><br>
+                                        <a class="card-text book-title" href="#"> 10000 Câu trắc nghiệm mác lênin thần thánh</a>
+                                        <p class="book-extra-info">3w ago, 37,857 views</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book_item book col-md-3"><!----------------------BOOOK ITEM---------->
+                            <div class="img-hover">
+                                <div class="thumbnail">
+                                    <a href="#"><img class="img_book_thumb" src="images/thumb_tamly_hh.jpg" alt="Book thumbnail"></a>
+                                    <div class="caption">
+                                        <a class="card-text book-author" href="#">Superman Library</a><br>
+                                        <a class="card-text book-title" href="#"> 10000 Câu trắc nghiệm mác lênin thần thánh</a>
+                                        <p class="book-extra-info">3w ago, 37,857 views</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book_item book col-md-3"><!----------------------BOOOK ITEM---------->
+                            <div class="img-hover">
+                                <div class="thumbnail">
+                                    <a href="#"><img class="img_book_thumb" src="images/thumb_tamly_hh.jpg" alt="Book thumbnail"></a>
+                                    <div class="caption">
+                                        <a class="card-text book-author" href="#">Superman Library</a><br>
+                                        <a class="card-text book-title" href="#"> 10000 Câu trắc nghiệm mác lênin thần thánh</a>
+                                        <p class="book-extra-info">3w ago, 37,857 views</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+           <div class="link">
+               <ul class="pager">
+                   <li><a href="#" rel="prev">&laquo;</a></li>
+                   <li><a href="#">1</a></li>
+                   <li><a href="#">2</a></li>
+                   <li><a href="#">3</a></li>
+                   <li><a href="#">4</a></li>
+                   <li><a href="#">5</a></li>
+                   <li><a href="#">6</a></li>
+                   <li><a href="#" rel="next">&raquo;</a></li>
+               </ul>
+           </div>
+        </div>
+</body>
+</html>
