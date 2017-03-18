@@ -2,14 +2,17 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <!--<title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">-->
+    <?php 
+        require_once('page/include.php');
+    ?>
 </head>
 
 <body>
@@ -19,7 +22,6 @@
         ?>
         <div class="container-fluid content-page">
             <div class="col-md-8 content-left">
-                <div class="col-md-11">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
@@ -58,10 +60,10 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    Ut qui labore cillum occaecat. Dolor esse fugiat qui dolore culpa minim non Lorem aliqua quis labore. Minim laboris labore consectetur aliqua cupidatat qui anim non ea culpa reprehenderit ipsum ad. Occaecat dolore sunt culpa incididunt adipisicing. Commodo
-                    tempor sint ex id. Amet enim ea officia ea incididunt ex deserunt laborum sunt. Anim duis irure labore aute elit esse dolor consequat officia ea occaecat sit ipsum consectetur.
+                    <article>
+                        Nulla magna aute officia mollit nulla culpa velit. Deserunt elit laborum ipsum consequat commodo exercitation cupidatat est culpa duis duis. Amet exercitation ut consequat pariatur duis commodo culpa nulla. Cillum aliqua incididunt exercitation ut labore aliquip fugiat Lorem in. Commodo in minim magna ipsum. Laborum ad deserunt quis irure et consectetur reprehenderit aute incididunt ipsum. Reprehenderit nisi cupidatat officia id consequat irure fugiat qui ut amet deserunt voluptate.
+                    </article>
                 </div>
-            </div>
             <div class="col-md-4 content-right">
                 <div class="category">
                     <h1> Đề mới nhất </h1>
@@ -84,11 +86,11 @@
                 </div>
             </div>
         </div>
-        <div class="row footer-page">
-            <p>BK Maker copyright 2017</p>
-        </div>
+        
     </div>
-
+    <?php 
+            require_once('page/footer.php');
+        ?>
 
 </body>
 

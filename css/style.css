@@ -1,9 +1,9 @@
 body {
-    background-color: #F2F2F2;
+    background-color: #E7F3FF;
 }
 
 .main-page {
-    background-color: #F2F2F2;
+    background-color: #E7F3FF;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 .nav-custom {
-    background-color: #363636;
+    background-color: #ffffff;
     border: 0;
     margin: 15px;
     min-height: 1px;
@@ -49,34 +49,58 @@ body {
     margin: 5px;
 }
 
+.title-page a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #5B5C60;
+    text-transform: uppercase;
+}
+
 .navbar-inverse .navbar-nav>li>a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
-    color: #eeeeee;
+    color: #5B5C60;
+}
+
+.signin {
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+}
+
+.signin:hover {
+    box-shadow: 0 0 6px rgba(35, 173, 255, 1);
 }
 
 .header-page {
-    background-color: #363636;
+    background-color: #ffffff;
     border-top: 5px solid #5C3566;
+    border-bottom: 1px solid #F5F5F5;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
-    background-color: #0092DF;
+    background-color: 0;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em darkblue;
 }
 
 .icon-bar {
-    background-color: #ffffff;
+    background-color: #5B5C60;
+}
+
+.navbar-toggle:hover {
+    box-shadow: 0 0 6px rgba(35, 173, 255, 1);
 }
 
 .navbar-toggle {
-    border: 1px solid #ffffff;
-    border-radius: 0;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
 }
 
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a:hover {
-    background-color: #2A166F;
+    background-color: 0;
+    text-shadow: 3px 3px 3px black, 0 0 1em blue, 0 0 0.2em darkblue;
 }
 
 .dropdown-menu {
@@ -98,45 +122,54 @@ body {
 }
 
 .content-page {
-    margin: 20px;
-    margin-top: 25px;
-    padding: 0;
-    background-color: #F2F2F2;
+    background-color: #ffffff;
+    padding: 15px;
+    min-height: 600px;
 }
 
 .content-left {
-    background-color: #F2F2F2;
-    padding: 0;
+    background-color: #ffffff;
+    padding: 15px;
 }
 
-.content-left>div {
-    background-color: #fff;
-    padding: 0;
+.content-left>article {
+    padding: 15px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
 .content-right {
-    background-color: #F2F2F2;
-    padding: 0;
+    background-color: #ffffff;
+    padding: 15px;
 }
 
 .category {
     background-color: #fff;
-    padding: 10px;
+    padding: 0;
     margin-bottom: 15px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 
 .category h1 {
     border-top: 5px solid #5C3566;
     font-size: 20px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     text-transform: uppercase;
-    padding: 5px;
+    padding: 15px;
     margin: 0;
-    background-color: #0092DF;
-    color: #fff;
+    background-color: #D7E1EB;
+    color: #8F8759;
+}
+
+.category ul {
+    padding: 15px;
+    padding-left: 30px;
 }
 
 .footer-page {
-    height: 50px;
+    margin: 0;
+    min-height: 100px;
     background-color: #363636;
     border-bottom: 5px solid #5C3566;
 }
@@ -146,6 +179,16 @@ body {
     text-align: center;
     margin-top: 10px;
 }
+
+.carousel {
+    border-radius: 5px;
+    border: 5px solid #5C3566;
+    margin: 15px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+
+/*---------------List de -----------------------*/
 
 
 /*---------------Tao de thi -------------------*/
@@ -162,7 +205,7 @@ body {
     background-color: #0092DF;
     position: fixed;
     top: 150px;
-    left: 92%;
+    left: 90%;
 }
 
 .create-modal {
@@ -214,6 +257,7 @@ body {
 .create-body {
     background-color: #ffffff;
     padding: 15px;
+    min-height: 600px;
 }
 
 .row-create {
