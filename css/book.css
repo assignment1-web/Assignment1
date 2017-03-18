@@ -1,0 +1,97 @@
+.book_item{
+    width: 220px;
+/*
+    height: 300px;
+*/
+}
+
+/*body{
+    background-color: #EEE;
+}*/
+
+.book_item .img_book_thumb{
+    width: 220px;
+    height: 178px;
+}
+
+body{
+/*
+    background-color: #AAA;
+*/
+}
+
+.book_item .book-title{
+    color: #222222;
+    font-size: 14px;
+}
+.book_item .book-author{
+    color: #008DD2;
+    font-size: 13px;
+}
+
+.book_item .divider {
+    position: relative;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+.book_item .book-extra-info{
+    color: #848484;
+    font-size: 11px;
+}
+
+.content{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*SEARCH BOX*/
+
+body {
+    padding-top: 50px;
+}
+.dropdown.dropdown-lg .dropdown-menu {
+    margin-top: -1px;
+    padding: 6px 20px;
+}
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-group .form-control:last-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    #adv-search {
+        width: 500px;
+/*
+        margin: 0 auto;
+*/
+    }
+    .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 500px;
+    }
+}
+
+
+/*END SEARCH BOX*/
