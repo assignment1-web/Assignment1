@@ -267,7 +267,7 @@ body {
 
 .home-page-top-board {
     margin: 0px;
-    height: 295px;
+    min-height: 290px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -321,7 +321,7 @@ body {
     margin-left: 15px;
 }
 
-.category-hot-today .book-item {
+.category-hot-today{
     margin-top: -60px;
 }
 
