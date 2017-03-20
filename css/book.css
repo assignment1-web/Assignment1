@@ -73,30 +73,105 @@ body{
     margin-top:80px;
 }
 
+/*
+-------------------------------------------BOOK - BOOK GRID---------------------------------
+*/
+
 .book-item .img-book-thumb{
     width: 220px;
     height: 178px;
 }
 
-.book-item .book-title{
+.book-grid .book-item .book-title{
     color: #222222;
     font-size: 14px;
 }
-.book-item .book-author{
+.book-grid .book-item .book-author{
     color: #008DD2;
     font-size: 13px;
 }
 
-.book-item .divider {
+.book-grid .book-item .divider {
     position: relative;
     border-bottom: 1px solid #E0E0E0;
     margin-bottom: 4px;
     margin-top: 4px;
 }
-.book-item .book-extra-info{
+.book-grid .book-item .book-extra-info{
     color: #848484;
     font-size: 11px;
 }
+
+.book-grid .img-hover{
+    -webkit-transition: all .4s ease; /* Safari and Chrome */
+    -moz-transition: all .4s ease; /* Firefox */
+    -o-transition: all .4s ease; /* IE 9 */
+    -ms-transition: all .4s ease; /* Opera */
+    transition: all .4s ease;
+}
+.book-grid .img-hover:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.120); /* Safari and Chrome */
+    -moz-transform:scale(1.12); /* Firefox */
+    -ms-transform:scale(1.12); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.120); /* Opera */
+    transform:translatZ(0) scale(1.12);
+}
+
+/*-------------------------------BOOK LIST-------*/
+
+.book-list .img-hover img {
+    -webkit-transition: all .4s ease; /* Safari and Chrome */
+    -moz-transition: all .4s ease; /* Firefox */
+    -o-transition: all .4s ease; /* IE 9 */
+    -ms-transition: all .4s ease; /* Opera */
+    transition: all .4s ease;
+}
+.book-list .img-hover :hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.40); /* Safari and Chrome */
+    -moz-transform:scale(1.40); /* Firefox */
+    -ms-transform:scale(1.40); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.40); /* Opera */
+    transform:translatZ(0) scale(1.40);
+}
+
+.book-list .book-item .post-info{
+    padding-left: 5px;
+}
+
+.book-list .caption .book-title a{
+    color: #008DD2;
+}
+
+
+.book-list .book-item .post-meta{
+    margin-top: 8px;
+}
+
+.book-list .book-item .post-meta{
+    margin-top: 8px;
+}
+
+.book-list .book-item .post-meta .item-icon{
+    margin-left: 5px;
+}
+.book-list .book-item .post-meta .item-text{
+    margin-left: 1px;
+}
+
+.book-list .post-info .post-meta span, .post-info .post-meta a{
+    color:#aaa;
+}
+
+/*-------------------------------END BOOK LIST-------*/
+
+
+
+
+
 
 /*SEARCH BOX*/
 
@@ -148,62 +223,7 @@ body{
     }
 }
 
-#book.post-info .post-meta span, .post-info .post-meta a{
-    color:#aaa;
-}
-#book .post-info{
-    padding: 12px 20px;
-}
-
-#book .book-list{
-
-}
-
-.caption .book-title a{
-    color: #008DD2;
-}
-
-.book-list .img-hover img {
-    -webkit-transition: all .4s ease; /* Safari and Chrome */
-    -moz-transition: all .4s ease; /* Firefox */
-    -o-transition: all .4s ease; /* IE 9 */
-    -ms-transition: all .4s ease; /* Opera */
-    transition: all .4s ease;
-}
-.book-list .img-hover :hover {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform:translateZ(0) scale(1.40); /* Safari and Chrome */
-    -moz-transform:scale(1.40); /* Firefox */
-    -ms-transform:scale(1.40); /* IE 9 */
-    -o-transform:translatZ(0) scale(1.40); /* Opera */
-    transform:translatZ(0) scale(1.40);
-}
-.book-grid .img-hover{
-    -webkit-transition: all .4s ease; /* Safari and Chrome */
-    -moz-transition: all .4s ease; /* Firefox */
-    -o-transition: all .4s ease; /* IE 9 */
-    -ms-transition: all .4s ease; /* Opera */
-    transition: all .4s ease;
-}
-.book-grid .img-hover:hover {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform:translateZ(0) scale(1.120); /* Safari and Chrome */
-    -moz-transform:scale(1.12); /* Firefox */
-    -ms-transform:scale(1.12); /* IE 9 */
-    -o-transform:translatZ(0) scale(1.120); /* Opera */
-    transform:translatZ(0) scale(1.12);
-}
-
-
-/*END SEARCH BOX*/
-/*
-
-.list-group .item .caption{
-    margin-left: 100px;
-}
-*/
+/*--------------------------------------END SEARCH-------------------------------------*/
 
 /*---------------------------- TRANG CHU*/
 
@@ -227,6 +247,7 @@ body{
 }
 
 .fancy {
+    display: block;
     line-height: 0.1;
     text-align: center;
 }
@@ -241,7 +262,8 @@ body{
     height: 2px;
     border-bottom: 0.5px solid #116D96;
     top: 0;
-    width: 600px;
+    display: block;
+    width: 100%;
 }
 .fancy span:before {
     right: 100%;
