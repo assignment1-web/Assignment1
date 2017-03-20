@@ -23,7 +23,7 @@ $('#add-question').on('click', function() {
     newdiv.id = "group-question" + count_question;
     newdiv2.className = 'form-group location-question';
     newdiv2.id = "location-question" + count_question;
-    newlabel.innerHTML = "<h3>Câu hỏi số " + count_question + " : </h3>";
+    newlabel.innerHTML = "<p><strong>Câu hỏi số " + count_question + "<strong> </p>";
     newdiv.appendChild(newlabel);
     newdiv.appendChild(newa);
     newdiv.appendChild(newaremove);
@@ -32,7 +32,7 @@ $('#add-question').on('click', function() {
     count_questions.push([count_question, 0]);
     $('#content').append(newdiv);
 
-    CKEDITOR.replace("question" + count_question);
+    //CKEDITOR.replace("question" + count_question);
 });
 
 $('#content').on('click', '.add-question-item', function() {
@@ -54,6 +54,13 @@ $('#content').on('click', '.add-question-item', function() {
     CKEDITOR.replace("question" + index + "question-item" + counter);
 
 });
+
+
+
+
+
+
+
 $('#content').on('click', '.remove-question-item', function() {
 
     var index = $(this).index(".remove-question-item") + 1;
