@@ -1,55 +1,14 @@
-/*<<<<<<< HEAD
-article {
-    min-height: 600px;
+#list ul{
+  padding-left: 0px;
+  background: #737373;
 }
 
-.header-page {
-    background-color: #293A48;
-    border: 0;
-    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
-}
-
-.nav-custom {
-    background-color: #293A48;
-    border: 0;
-    margin: 15px;
-    min-height: 1px;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
-.title-page a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.title-page a:hover {
-    color: #ffffff;
-    text-shadow: 1px 1px 1px black, 0 0 1em blue, 0 0 0.2em darkblue;
-}
-
-.icon-bar {
-    background-color: #ffffff;
-=======*/
-
-#list ul {
-    padding-left: 0px;
-    background: #737373;
-}
-
-#list span {
-    font-size: 30px;
-    margin-right: 15px;
+#list span{
+  font-size: 30px;
+  margin-right: 15px;
 }
 
 #list ul a {
-<<<<<<< HEAD
   position: relative;
   display: block;
   padding: 15px 15px 17px 50px;
@@ -73,8 +32,9 @@ div.col-md-3 {
 }
 
 #title{
-	font-size: 25px;
-	margin-bottom: 0px;
+  font-size: 20px;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 .navbar.navbar-inverse {
@@ -86,13 +46,6 @@ div.col-md-3{
 }
 
 div.col-md-9 hr { 
-/*=======
-    position: relative;
-    display: block;
-    padding: 15px 15px 17px 50px;
-    color: #fff;
-    border-bottom: 1px solid #737373;
-    font-size: 15px;*/
     display: block;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -100,33 +53,6 @@ div.col-md-9 hr {
     margin-right: auto;
     border-style: inset;
     border-width: 1.5px;
-}
-
-div.col-md-3 {
-    background-color: #737373;
-}
-
-#list ul a:hover {
-    background: #999999;
-    width: 100%;
-    text-decoration: none;
-}
-
-#title {
-    font-size: 25px;
-    margin-bottom: 0px;
-}
-
-div.col-md-9 hr {
->>>>>>> 00081f549da1a5f876f5a5cb61835a94ad580dab
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1.5px;
-<<<<<<< HEAD
 } 
 
 table {
@@ -186,6 +112,7 @@ table {
 
 .name {
   color: #002699;
+  font-weight: lighter;
 }
 
 /* Small Sizes */
@@ -216,26 +143,4 @@ ul.pager{
 }
 .glyphicon.glyphicon-wrench{
   font-size: 25px;
-=======
-}
-
-div.panel-heading {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    border: none;
-}
-
-div.panel-heading a {
-    margin-left: 10px;
-    font-size: 17px;
-    text-decoration: none;
-}
-
-div.panel-heading a:hover {
-    text-decoration: none;
-}
-
-div.panel.panel-default {
-    margin-bottom: 0px;
->>>>>>> 00081f549da1a5f876f5a5cb61835a94ad580dab
 }

@@ -13,8 +13,8 @@ $('#add-question').on('click', function() {
     newdiv2 = document.createElement("div");
     newa = document.createElement("a");
     newaremove = document.createElement("a");
-    newa.innerHTML = "<span class='glyphicon glyphicon-plus add-item'>";
-    newaremove.innerHTML = "<span class='glyphicon glyphicon-remove remove-item'>";
+    newa.innerHTML = "<span class='glyphicon glyphicon-plus add-question ' style='font-size:15px'>";
+    newaremove.innerHTML = "<span class='glyphicon glyphicon-remove remove-question ' style='font-size:15px'>";
     newa.className = "add-question-item";
     newaremove.className = "remove-question-item";
     newa.href = "#";
@@ -23,7 +23,7 @@ $('#add-question').on('click', function() {
     newdiv.id = "group-question" + count_question;
     newdiv2.className = 'form-group location-question';
     newdiv2.id = "location-question" + count_question;
-    newlabel.innerHTML = "Câu hỏi số " + count_question + " : ";
+    newlabel.innerHTML = "<p><strong>Câu hỏi số " + count_question + "<strong> </p>";
     newdiv.appendChild(newlabel);
     newdiv.appendChild(newa);
     newdiv.appendChild(newaremove);
@@ -32,7 +32,7 @@ $('#add-question').on('click', function() {
     count_questions.push([count_question, 0]);
     $('#content').append(newdiv);
 
-    CKEDITOR.replace("question" + count_question);
+    //CKEDITOR.replace("question" + count_question);
 });
 
 $('#content').on('click', '.add-question-item', function() {
@@ -45,7 +45,7 @@ $('#content').on('click', '.add-question-item', function() {
     newdiv.className = "form-group";
     newdiv.id = "question" + index + "group-question-item" + counter;
     newlabel = document.createElement("label");
-    newlabel.innerHTML = "Đáp án " + counter + " : ";
+    newlabel.innerHTML = "<h4><label class='multi-choice'>Đáp án " + counter + " : <input type='radio'' name='dapan' ></label></h4>";
     newtextarea = document.createElement("textarea");
     newtextarea.id = "question" + index + "question-item" + counter;
     newdiv.appendChild(newlabel);
@@ -54,6 +54,13 @@ $('#content').on('click', '.add-question-item', function() {
     CKEDITOR.replace("question" + index + "question-item" + counter);
 
 });
+
+
+
+
+
+
+
 $('#content').on('click', '.remove-question-item', function() {
 
     var index = $(this).index(".remove-question-item") + 1;
@@ -92,4 +99,18 @@ $('#remove-question').on('click', function() {
 
     }
     count_question--;
+});
+
+
+$('#fab').click(function() {
+    $('#fab-toggle').toggleClass('hidden');
+
+});
+
+$(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
+$('.thumbnail').on('click', function() {
+    location.href = "../taode/modify.html";
 });

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Admin </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/edit_user.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Elearning online</a>
+      </div>
+
+      <form class="navbar-form navbar-left">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="dropdown navbar-right">
+        <img src="images/slide2.jpg" class="img-circle " alt="Cinque Terre" width="35" height="35">
+        <button class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown">Admin 1
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"><div>
+      <nav id="list">
+        <ul style="list-style-type:none">
+          <li><a class="active"><span class="glyphicon glyphicon-user"></span>Users</a></li>
+          <li><a><span class="glyphicon glyphicon-plus"></span>Tạo đề</a></li>
+          <li><a><span class="glyphicon glyphicon-list-alt"></span>Ngân hàng đề</a></li>
+          <li><a><span class="glyphicon glyphicon-wrench"></span>Quản lý đề</a></li>
+        </ul>
+      </nav></div>
+    </div>
+
+     <div class="col-md-9" id="cot2">
+        <p id="title"><strong>All users / Nguyễn Văn A</strong></p>
+        <hr>
+        <form>
+          <div class="form-group">
+            <label>Username:</label>
+            <input type="text" value="Nguyễn Văn A" class="form-control" id="new_username" placeholder="example@gmail.com">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" value="elearning@gmail.com" class="form-control" id="new_email" placeholder="example@gmail.com">
+          </div>
+
+          <div class="form-group">
+            <label for="pwd">Change password:</label>
+            <input type="password" class="form-control" id="new_pwd">
+          </div>
+
+          <div class="form-group">
+            <label for="pwd">Password confirmaton:</label>
+            <input type="password" class="form-control" id="new_pwd">
+          </div>
+
+          <div class="form-group">
+            <label for="text">Phân quyền:</label>
+            <select class="form-control" id="select">
+                <option>User</option>
+                <option>Admin</option>
+             </select>
+          </div>
+          
+        </form>
+      <div style="padding-left: 30px; margin-bottom: 15px;">
+        <button type="button" class="btn-md btn-primary" style="margin-top: 10px;">Save change</button>
+        <a href="admin.html"><button type="button" class="btn-md btn-primary" style="margin-top: 10px; margin-left: 15px;" onclick="goBack()">Cancel</button></a>
+      </div>
+    </div>
+
+</div>
+
+</body>
+</html>

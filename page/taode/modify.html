@@ -11,7 +11,6 @@
     <script src="../../js/bootstrap.min.js"></script>
     <script src="../../plugin/ckeditor/ckeditor.js"></script>
     <link href="../../css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/book.css" type="text/css" rel="stylesheet">
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/taode.css" rel="stylesheet">
 </head>
@@ -36,15 +35,15 @@
                     <div class="collapse navbar-collapse " id="myNavbar">
 
                         <ul class="nav navbar-nav">
-                            <li><a href="./../../index.html" class="active-choice"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Trang chủ</a></li>
-                            <li><a href="./../../page/taode/create_test.html"><i class="fa fa-book" aria-hidden="true"></i>&nbsp; Tạo đề thi</a></li>
+                            <li><a href="./../../index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Trang chủ</a></li>
+                            <li><a href="page/taode/create_test.html" class="active-choice"><i class="fa fa-book" aria-hidden="true"></i>&nbsp; Tạo đề thi</a></li>
                             <li><a href="#"><i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp;Thư viện đề thi</a></li>
-                            <li><a href="./../../page/quanlyde/manager.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Quản lí đề thi</a></li>
+                            <li><a href="page/quanlyde/manager.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Quản lí đề thi</a></li>
                         </ul>
 
                         <ul class="nav navbar-nav navbar-right">
 
-                            <li><a href="./../../page/nguoidung/login.html" class="login" id="login"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Đăng nhập</a></li>
+                            <li><a href="page/nguoidung/login.html" class="login" id="login"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Đăng nhập</a></li>
                         </ul>
 
                     </div>
@@ -60,8 +59,8 @@
             <div>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="../../index.html">BK Maker</a></li>
-                    <li class="breadcrumb-item"><a href="create_test.html">Tạo đề thi</a></li>
-                    <li class="breadcrumb-item">Chi tiết</li>
+                    <li class="breadcrumb-item"><a href="#">Kho đề</a></li>
+                    <li class="breadcrumb-item">Chỉnh sửa</li>
                 </ol>
             </div>
             <div class="panel panel-default panel-question">
@@ -70,12 +69,11 @@
                 </div>-->
                 <div class="panel-body">
                     <div class="fixed-action">
-                        <a id="fab" data-toggle="tooltip"><span class="glyphicon glyphicon-pencil fab"> </span></a>
+                        <a id="fab" data-toggle="tooltip"><span class="glyphicon glyphicon-pencil fab"></span> </a>
                         <ul id="fab-toggle" class="hidden">
-                            <li><a id="add-question"><span class="glyphicon glyphicon-plus add-question">  </span></a></li>
-                            <li><a id="remove-question"><span class="glyphicon glyphicon-remove remove-question">  </span></a></li>
-                            <li><a href="#" id="review-question"><span class="glyphicon glyphicon-play review-question">  </span></a></li>
-                            <li><a href="complete.html" id="done-question"><span class="glyphicon glyphicon-ok done-question">  </span></a></li>
+                            <li><a id="add-question"><span class="glyphicon glyphicon-plus add-question"></span> </a></li>
+                            <li><a id="remove-question"><span class="glyphicon glyphicon-remove remove-question"></span> </a></li>
+                            <li><a href="complete.html" id="done-question"><span class="glyphicon glyphicon-ok done-question"></span> </a></li>
                         </ul>
                     </div>
                     <div id="content">
@@ -89,14 +87,14 @@
                             <div class="form-group">
                                 <label class="control-label col-sm-2" for="name">Tên câu hỏi ? <sup style="color: red;"> (*) </sup> </label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="name" placeholder="Tên câu hỏi ?">
+                                    <input type="text" class="form-control" id="name" placeholder="Tên câu hỏi ?" value="How are you ?">
                                 </div>
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label class="control-label col-sm-2" for="point">Điểm <sup style="color: red;"> (*) </sup> </label>
                                 <div class="col-sm-10">
-                                    <input type="number" class="form-control" style="width: 100px;" id="point" value="1">
+                                    <input type="number" class="form-control" style="width: 100px;" id="point" value="2">
                                 </div>
                             </div>
                             <hr>
@@ -106,7 +104,7 @@
                             <div class="form-group row">
                                 <label class="control-label col-sm-2" for="correct-question"> Đáp án đúng </label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="correct-question">
+                                    <input type="text" class="form-control" id="correct-question" value="I'm fine.Thank you.">
                                 </div>
                             </div>
                             <hr>
@@ -114,11 +112,22 @@
                                 <h2 class=" col-sm-4 col-sm-offset-2 text-left">Đáp án sai 1</h2>
                             </div>
                             <div class="form-group row">
-                                <label class="control-label col-sm-2" for="incorrect-question"> Đáp án sai 1</label>
+                                <label class="control-label col-sm-2" for="incorrect-question1"> Đáp án sai 1</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="incorrect-question">
+                                    <input type="text" class="form-control" id="incorrect-question1" value="Yes, I do">
                                 </div>
                             </div>
+                            <hr>
+                            <div class="form-group">
+                                <h2 class=" col-sm-4 col-sm-offset-2 text-left">Đáp án sai 2</h2>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label col-sm-2" for="incorrect-question2"> Đáp án sai 2</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="incorrect-question2" value="Greatly !">
+                                </div>
+                            </div>
+
                         </div>
                         <div class="form-horizontal">
                             <hr>
@@ -138,7 +147,12 @@
 
                 </div>
                 <div class="panel-footer clearfix">
-                    <button type="submit" id="submit" class="btn btn-primary btn-style pull-right"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp;Thêm câu hỏi</button>
+                    <button type="submit" id="submit" class="btn btn-primary btn-style pull-right alert-danger"><i class="fa fa-remove" aria-hidden="true"></i> &nbsp;Xóa câu hỏi</button>
+                    <ul class="pager center-block">
+                        <li><a href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i> &nbsp;Trước</a></li>
+                        <li><a href="#">Sau &nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                    </ul>
+
                 </div>
             </div>
         </article>
