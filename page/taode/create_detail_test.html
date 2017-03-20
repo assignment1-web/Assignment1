@@ -11,6 +11,7 @@
     <script src="../../js/bootstrap.min.js"></script>
     <script src="../../plugin/ckeditor/ckeditor.js"></script>
     <link href="../../css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/book.css" type="text/css" rel="stylesheet">
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/taode.css" rel="stylesheet">
 </head>
@@ -18,53 +19,42 @@
 <body>
     <div class="container-fluid main-page">
         <div class="row navbar-fixed-top  header-page">
-            <div class="col-md-4 ">
+            <div class="col-md-2">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span> 
                 </button>
-                <h1 class="title-page">
+                <h3 class="title-page">
+                    <a href="index.html"><span>BK-</span>Maker</a>
+                </h3>
 
-
-                    <a href="../../index.html"><img src="../../images/2.jpg" alt="images" width="70px" height="70px" class="img-circle"><span>BK Maker</span></a>
-
-
-                </h1>
 
             </div>
-            <div class="col-md-8">
-                </nav>
+            <div class="col-md-10">
                 <nav class="navbar navbar-inverse nav-custom ">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
+                    <div class="collapse navbar-collapse " id="myNavbar">
 
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html" class="active-choice"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Trang chủ</a></li>
+                            <li><a href="page/taode/create_test.html"><i class="fa fa-book" aria-hidden="true"></i>&nbsp; Tạo đề thi</a></li>
+                            <li><a href="#"><i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp;Thư viện đề thi</a></li>
+                            <li><a href="page/quanlyde/manager.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;Quản lí đề thi</a></li>
+                        </ul>
 
-                        </div>
-                        <div class="collapse navbar-collapse" id="myNavbar">
-                            <ul class="nav navbar-nav">
-                                <li><a href="../../index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Trang chủ</a></li>
-                                <!--<li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Đề thi
-                                <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Tạo đề thi</a></li>
-                                        <li><a href="#">Đề số 2</a></li>
-                                        <li><a href="#">Đề số 3</a></li>
-                                    </ul>
-                                </li>-->
-                                <li><a href="create_test.html"><i class="fa fa-book" aria-hidden="true"></i>&nbsp; Tạo đề thi</a></li>
-                                <li><a href="#">Kho đề</a></li>
-                                <li><a href="#">Quản lí đề thi</a></li>
-                            </ul>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="../nguoidung/login.html" class="login"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
-                                <li><a href="../nguoidung/signin.html" class="signin"><span class="glyphicon glyphicon-user"></span> Đăng kí</a></li>
-                            </ul>
-                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="page/nguoidung/login.html" class="login" id="login"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp; Đăng nhập</a></li>
+                        </ul>
+
                     </div>
+
+
+
                 </nav>
+
             </div>
+            <!--end-->
         </div>
         <article>
             <div>
@@ -80,12 +70,12 @@
                 </div>-->
                 <div class="panel-body">
                     <div class="fixed-action">
-                        <a id="fab" data-toggle="tooltip"><span class="glyphicon glyphicon-pencil fab"> </a>
+                        <a id="fab" data-toggle="tooltip"><span class="glyphicon glyphicon-pencil fab"> </span></a>
                         <ul id="fab-toggle" class="hidden">
-                            <li><a id="add-question"><span class="glyphicon glyphicon-plus add-question"> </a></li>
-                            <li><a id="remove-question"><span class="glyphicon glyphicon-remove remove-question"> </a></li>
-                            <li><a href="#" id="review-question"><span class="glyphicon glyphicon-play review-question"> </a></li>
-                            <li><a href="complete.html" id="done-question"><span class="glyphicon glyphicon-ok done-question"> </a></li>
+                            <li><a id="add-question"><span class="glyphicon glyphicon-plus add-question">  </span></a></li>
+                            <li><a id="remove-question"><span class="glyphicon glyphicon-remove remove-question">  </span></a></li>
+                            <li><a href="#" id="review-question"><span class="glyphicon glyphicon-play review-question">  </span></a></li>
+                            <li><a href="complete.html" id="done-question"><span class="glyphicon glyphicon-ok done-question">  </span></a></li>
                         </ul>
                     </div>
                     <div id="content">
@@ -135,7 +125,7 @@
                             <div class="form-group">
                                 <label class="control-label col-sm-2" for="note"> Ghi chú</label>
                                 <div class="col-sm-10">
-                                    <textarea type="text" class="form-control" id="note"></textarea>
+                                    <textarea class="form-control" id="note"></textarea>
                                 </div>
                                 <script>
                                     CKEDITOR.replace("note");
@@ -151,11 +141,12 @@
                     <button type="submit" id="submit" class="btn btn-primary btn-style pull-right"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp;Thêm câu hỏi</button>
                 </div>
             </div>
+        </article>
+        <div class="row footer-page">
+            <p>BK Maker copyright 2017</p>
+        </div>
     </div>
-    <div class="row footer-page">
-        <p>BK Maker copyright 2017</p>
-    </div>
-    </article>
+
     <script src="../../js/taode.js"></script>
 </body>
 

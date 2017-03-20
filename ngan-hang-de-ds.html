@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html >
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,9 +12,11 @@
     <link href="css/book.css" type="text/css" rel="stylesheet">
 
 </head>
+
 <body>
     <div class="container main-page">
-        <div class="row navbar-fixed-top  header-page">             <!--HEADER-->
+        <div class="row navbar-fixed-top  header-page">
+            <!--HEADER-->
             <div class="col-md-2">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
@@ -32,7 +35,8 @@
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav">
-                                <div class="search-box search-box-nav"><!------------------------------------SEARCH REGION-->
+                                <div class="search-box search-box-nav">
+                                    <!------------------------------------SEARCH REGION-->
                                     <div class="col-md-x">
                                         <div class="input-group" id="adv-search">
                                             <input type="text" class="form-control" placeholder="Tìm kiếm" />
@@ -62,11 +66,11 @@
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="search-author">Chủ đề</label>
-                                                                    <input class="form-control" type="text" id="search-author"/>
+                                                                    <input class="form-control" type="text" id="search-author" />
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="search-ft-topic">Tác giả</label>
-                                                                    <input class="form-control" type="text" id="search-ft-topic"/>
+                                                                    <input class="form-control" type="text" id="search-ft-topic" />
                                                                 </div>
                                                                 <!--
                                                                                                                     <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
@@ -74,12 +78,13 @@
                                                             </form>
                                                         </div>
                                                     </div>
-                                                    <button type="button" class="btn btn-primary" ><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div><!---------------------------------END SEARCH BOX-->
+                                </div>
+                                <!---------------------------------END SEARCH BOX-->
                                 </li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
@@ -87,19 +92,20 @@
                                 <li><a href="ngan-hang-de-ds.html">Kho đề</a></li>
                                 <li><a href="page/taode/create_test.html">Tạo đề thi</a></li>
                                 <li>
-                                <li><a href="#" class="login userInfo"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+                                    <li><a href="#" class="login userInfo"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
-        </div><!----------------------------END HEADER-->
-    <div class="container main-content">
-        <div class="book-filter col-md-12" style="margin-top: 30px">
-            <div class="nav">
-                <div class="form-group col-md-2">
-                    <label for="filter-by-category">Chủ đề</label>
-                    <select class="form-control" id="filter-by-category">
+        </div>
+        <!----------------------------END HEADER-->
+        <div class="container main-content">
+            <div class="book-filter col-md-12" style="margin-top: 30px">
+                <div class="nav">
+                    <div class="form-group col-md-2">
+                        <label for="filter-by-category">Chủ đề</label>
+                        <select class="form-control" id="filter-by-category">
                         <option value="0" selected>Tất cả</option>
                         <option value="1">Đề Toeic</option>
                         <option value="2">Đề Sinh</option>
@@ -107,47 +113,48 @@
                         <option value="4">Vật lý</option>
                         <option value="4">Khác</option>
                     </select>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="filter-by-time">Ngày cập nhật</label>
-                    <select class="form-control" id="filter-by-time">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="filter-by-time">Ngày cập nhật</label>
+                        <select class="form-control" id="filter-by-time">
                         <option value="0" selected>Bất kỳ lúc nào</option>
                         <option value="1">24 giờ qua</option>
                         <option value="2">Tuần qua</option>
                         <option value="3">Tháng qua</option>
                         <option value="4">Năm qua</option>
                     </select>
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="filter-sort-by">Sắp xếp theo</label>
-                    <select class="form-control" id="filter-sort-by">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="filter-sort-by">Sắp xếp theo</label>
+                        <select class="form-control" id="filter-sort-by">
                         <option value="0" selected>Khớp với từ khóa</option>
                         <option value="0" selected>Ngày cập nhật</option>
                         <option value="1">Nhiều lượt xem</option>
                         <option value="2">Số câu</option>
                     </select>
-                </div>
-                <div class="nav navbar-nav navbar-right">
-                    <div class="">
-                        <label>Hiển thị</label><br>
-                        <div class="btn-group">
-                            <a href="ngan-hang-de-ds.html" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+                    </div>
+                    <div class="nav navbar-nav navbar-right">
+                        <div class="">
+                            <label>Hiển thị</label><br>
+                            <div class="btn-group">
+                                <a href="ngan-hang-de-ds.html" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
                             </span>&nbsp;Danh sách</a> <a href="ngan-hang-de-luoi.html" id="grid" class="btn btn-default btn-sm"><span
                                 class="glyphicon glyphicon-th"></span>&nbsp;Lưới</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-12">
+            <div class="col-md-12">
                 <div class="content-info col-md-12">
                     <p>Trang 1 trên tổng 12000 kết quả khớp với từ khóa "De thi mac lenin"</p>
                 </div>
 
                 <div class="type-book col-md-12" style="margin-top: 10px;">
                     <div id="book" class="row list-group col-md-12 book-list">
-                        <div class="item row">                           <!--BOOK ITEM-->
+                        <div class="item row">
+                            <!--BOOK ITEM-->
                             <div class="thumbnail col-xs-1 col-lg-1 img-hover">
                                 <a href="#"><img class="group list-group-image" width="80" height="100" src="images/thumb_mac_le.jpg" alt="Đề thi" />
                                 </a>
@@ -165,7 +172,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item row">                           <!--BOOK ITEM-->
+                        <div class="item row">
+                            <!--BOOK ITEM-->
                             <div class="thumbnail col-xs-1 col-lg-1 img-hover">
                                 <a href="#"><img class="group list-group-image" width="80" height="100" src="images/thumb_mac_le.jpg" alt="Đề thi" />
                                 </a>
@@ -183,7 +191,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item row">                           <!--BOOK ITEM-->
+                        <div class="item row">
+                            <!--BOOK ITEM-->
                             <div class="thumbnail col-xs-1 col-lg-1 img-hover">
                                 <a href="#"><img class="group list-group-image" width="80" height="100" src="images/thumb_mac_le.jpg" alt="Đề thi" />
                                 </a>
@@ -201,7 +210,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item row">                           <!--BOOK ITEM-->
+                        <div class="item row">
+                            <!--BOOK ITEM-->
                             <div class="thumbnail col-xs-1 col-lg-1 img-hover">
                                 <a href="#"><img class="group list-group-image" width="80" height="100" src="images/thumb_mac_le.jpg" alt="Đề thi" />
                                 </a>
@@ -219,7 +229,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item row">                           <!--BOOK ITEM-->
+                        <div class="item row">
+                            <!--BOOK ITEM-->
                             <div class="thumbnail col-xs-1 col-lg-1 img-hover">
                                 <a href="#"><img class="group list-group-image" width="80" height="100" src="images/thumb_mac_le.jpg" alt="Đề thi" />
                                 </a>
@@ -237,7 +248,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item row">                           <!--BOOK ITEM-->
+                        <div class="item row">
+                            <!--BOOK ITEM-->
                             <div class="thumbnail col-xs-1 col-lg-1 img-hover">
                                 <a href="#"><img class="group list-group-image" width="80" height="100" src="images/thumb_mac_le.jpg" alt="Đề thi" />
                                 </a>
@@ -255,7 +267,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item row">                           <!--BOOK ITEM-->
+                        <div class="item row">
+                            <!--BOOK ITEM-->
                             <div class="thumbnail col-xs-1 col-lg-1 img-hover">
                                 <a href="#"><img class="group list-group-image" width="80" height="100" src="images/thumb_mac_le.jpg" alt="Đề thi" />
                                 </a>
@@ -273,7 +286,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item row">                           <!--BOOK ITEM-->
+                        <div class="item row">
+                            <!--BOOK ITEM-->
                             <div class="thumbnail col-xs-1 col-lg-1 img-hover">
                                 <a href="#"><img class="group list-group-image" width="80" height="100" src="images/thumb_mac_le.jpg" alt="Đề thi" />
                                 </a>
@@ -291,7 +305,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item row">                           <!--BOOK ITEM-->
+                        <div class="item row">
+                            <!--BOOK ITEM-->
                             <div class="thumbnail col-xs-1 col-lg-1 img-hover">
                                 <a href="#"><img class="group list-group-image" width="80" height="100" src="images/thumb_mac_le.jpg" alt="Đề thi" />
                                 </a>
@@ -309,7 +324,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item row">                           <!--BOOK ITEM-->
+                        <div class="item row">
+                            <!--BOOK ITEM-->
                             <div class="thumbnail col-xs-1 col-lg-1 img-hover">
                                 <a href="#"><img class="group list-group-image" width="80" height="100" src="images/thumb_mac_le.jpg" alt="Đề thi" />
                                 </a>
@@ -330,20 +346,21 @@
                     </div>
                 </div>
             </div>
-    </div>
-           <div class="link">
-               <ul class="pager">
-                   <li><a href="#" rel="prev">&laquo;</a></li>
-                   <li><a href="#">1</a></li>
-                   <li><a href="#">2</a></li>
-                   <li><a href="#">3</a></li>
-                   <li><a href="#">4</a></li>
-                   <li><a href="#">5</a></li>
-                   <li><a href="#">6</a></li>
-                   <li><a href="#">trang cuối</a></li>
-                   <li><a href="#" rel="next">&raquo;</a></li>
-               </ul>
-           </div>
         </div>
+        <div class="link">
+            <ul class="pager">
+                <li><a href="#" rel="prev">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">trang cuối</a></li>
+                <li><a href="#" rel="next">&raquo;</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -350,7 +350,7 @@
         margin: 4px;
     }
     
-    .login-form>.button-group>#login {
+    .login-form>.button-group>#user-login {
         color: #fff;
         border: 0;
         background: #00C851;
