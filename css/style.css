@@ -35,8 +35,8 @@ body {
     }
 }
 
+
 .nav-custom {
-    background-color: #ffffff;
     border: 0;
     margin: 15px;
     min-height: 1px;
@@ -53,19 +53,23 @@ body {
 .title-page a {
     text-decoration: none;
     cursor: pointer;
-    color: #5B5C60;
+    color: #FFF;
     text-transform: uppercase;
 }
 
 .title-page a:hover {
-    color: #ffffff;
     text-shadow: 1px 1px 1px black, 0 0 1em blue, 0 0 0.2em darkblue;
+}
+
+.header-page, #myNavbar{
+    background-color: #3d4752;
+
 }
 
 .navbar-inverse .navbar-nav>li>a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
-    color: #5B5C60;
+    color: #FFF;
 }
 
 .signin {
@@ -73,12 +77,11 @@ body {
     border-radius: 4px;
 }
 
-.signin:hover {
-    box-shadow: 0 0 6px rgba(35, 173, 255, 1);
+.userInfo{
+    border-left: #707e8d solid 1px;
 }
 
 .header-page {
-    background-color: #ffffff;
     border-top: 5px solid #5C3566;
     border-bottom: 1px solid #F5F5F5;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
@@ -114,7 +117,7 @@ body {
 }
 
 .dropdown-menu>li>a {
-    padding: 15px;
+    padding: 10px;
 }
 
 .dropdown-menu>li>a:focus,

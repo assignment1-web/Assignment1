@@ -19,50 +19,89 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="plugin/ckeditor/ckeditor.js"></script>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/book.css" type="text/css" rel="stylesheet">
+
 </head>
 
 <body>
     <div class="container-fluid main-page">
         <div class="row navbar-fixed-top  header-page">
-            <div class="col-md-4 ">
+            <div class="col-md-2">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span> 
                 </button>
-                <h1 class="title-page">
-                    <a href="index.html"><img src="images/2.jpg" alt="images" width="70px" height="70px" class="img-circle">BK Maker</a>
-                </h1>
+                <h3 class="title-page">
+                    <a href="index.html"><img src="images/2.jpg" alt="images" width="60px" height="60px" class="img-circle">BK Maker</a>
+                </h3>
 
             </div>
-            <div class="col-md-8">
-                </nav>
+            <div class="col-md-10">
                 <nav class="navbar navbar-inverse nav-custom ">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
+                    <div class="container1">
+                        <div class="">
 
 
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav">
-                                <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>Trang chủ</a></li>
-                                <!--<li class="dropdown">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Đề thi
-                                <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Tạo đề thi</a></li>
-                                        <li><a href="#">Đề số 2</a></li>
-                                        <li><a href="#">Đề số 3</a></li>
-                                    </ul>
-                                </li>-->
-                                <li><a href="page/taode/create_test.html">Tạo đề thi</a></li>
-                                <li><a href="#">Kho đề</a></li>
-                                <li><a href="#">Quản lí đề thi</a></li>
+                                    <div class="search-box search-box-nav"><!------------------------------------SEARCH REGION-->
+                                        <div class="col-md-x">
+                                            <div class="input-group" id="adv-search">
+                                                <input type="text" class="form-control" placeholder="Tìm kiếm" />
+                                                <div class="input-group-btn">
+                                                    <div class="btn-group" role="group">
+                                                        <div class="dropdown dropdown-lg">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                                                <form class="form-horizontal" role="form">
+                                                                    <div class="form-group">
+                                                                        <label for="search-sort-by">Sắp xếp theo</label>
+                                                                        <select class="form-control" id="search-sort-by">
+                                                                            <option value="0" selected>Ngày cập nhật</option>
+                                                                            <option value="1">Nhiều lượt xem</option>
+                                                                            <option value="2">Số câu</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label for="search-ft-by-time">Ngày cập nhật</label>
+                                                                        <select class="form-control" id="search-ft-by-time">
+                                                                            <option value="0" selected>Bất kỳ lúc nào</option>
+                                                                            <option value="1">24 giờ qua</option>
+                                                                            <option value="2">Tuần qua</option>
+                                                                            <option value="3">Tháng qua</option>
+                                                                            <option value="4">Năm qua</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label for="search-author">Chủ đề</label>
+                                                                        <input class="form-control" type="text" id="search-author"/>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label for="search-ft-topic">Tác giả</label>
+                                                                        <input class="form-control" type="text" id="search-ft-topic"/>
+                                                                    </div>
+                                                                    <!--
+                                                                                                                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                                                    -->
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!---------------------------------END SEARCH BOX-->
+                                </li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-
-                                <li><a href="#" class="login"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
-                                <li><a href="#" class="signin"><span class="glyphicon glyphicon-user"></span> Đăng kí</a></li>
+                                <li><a href="#">Trang chủ</a></li>
+                                <li><a href="#">Kho đề</a></li>
+                                <li><a href="page/taode/create_test.html">Tạo đề thi</a></li>
+                                <li>
+                                <li><a href="#" class="login userInfo"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
                             </ul>
                         </div>
                     </div>
