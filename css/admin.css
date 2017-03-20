@@ -1,0 +1,38 @@
+article {
+    min-height: 600px;
+}
+
+.header-page {
+    background-color: #293A48;
+    border: 0;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.nav-custom {
+    background-color: #293A48;
+    border: 0;
+    margin: 15px;
+    min-height: 1px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.title-page a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.title-page a:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black, 0 0 1em blue, 0 0 0.2em darkblue;
+}
+
+.icon-bar {
+    background-color: #ffffff;
+}

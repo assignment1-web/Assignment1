@@ -89,7 +89,26 @@
                         </ul>
                     </div>
                     <div id="content">
-
+                        <div class="form-group">
+                            <label>
+                                <h3>Câu hỏi số 1 : </h3>   
+                            </label>
+                            <a class="add-question-item"><span class='glyphicon glyphicon-plus add-question ' style='font-size:15px'></a>
+                            <a class="remove-question-item"><span class='glyphicon glyphicon-remove remove-question ' style='font-size:15px'></a>
+                            <textarea id="question1"></textarea>
+                            <div id="location-question1" class="form-group location-question">
+                                <div id="question1group-question-item1" class="form-group">
+                                    <label>
+                                        <h4><label class='multi-choice'>Đáp án 1 : <input type='radio' name='dapan' ></label> </h4>
+                                    </label>
+                                    <textarea id="question1question-item1"></textarea>
+                                </div>
+                            </div>
+                            <script>
+                                CKEDITOR.replace("question1");
+                                CKEDITOR.replace("question1question-item1");
+                            </script>
+                        </div>
                     </div>
 
                 </div>

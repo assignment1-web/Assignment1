@@ -3,14 +3,13 @@
 
 <head>
 
-    <title>Chi tiet de</title>
+    <title>Tao de</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <script src="../../js/jquery-3.1.1.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
     <script src="../../plugin/ckeditor/ckeditor.js"></script>
-    <link href="../../css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/taode.css" rel="stylesheet">
 </head>
@@ -43,7 +42,7 @@
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav">
-                                <li><a href="../../index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Trang chủ</a></li>
+                                <li><a href="../../index.html"><span class="glyphicon glyphicon-home"></span>Trang chủ</a></li>
                                 <!--<li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Đề thi
                                 <span class="caret"></span></a>
@@ -53,13 +52,14 @@
                                         <li><a href="#">Đề số 3</a></li>
                                     </ul>
                                 </li>-->
-                                <li><a href="create_test.html"><i class="fa fa-book" aria-hidden="true"></i>&nbsp; Tạo đề thi</a></li>
+                                <li><a href="create_test.html">Tạo đề thi</a></li>
                                 <li><a href="#">Kho đề</a></li>
                                 <li><a href="#">Quản lí đề thi</a></li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="../nguoidung/login.html" class="login"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
-                                <li><a href="../nguoidung/signin.html" class="signin"><span class="glyphicon glyphicon-user"></span> Đăng kí</a></li>
+
+                                <li><a href="login.html" class="login"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+                                <li><a href="signin.html" class="signin"><span class="glyphicon glyphicon-user"></span> Đăng kí</a></li>
                             </ul>
                         </div>
                     </div>
@@ -67,39 +67,30 @@
             </div>
         </div>
         <article>
-            <div>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../../index.html">BK Maker</a></li>
-                    <li class="breadcrumb-item"><a href="create_test.html">Tạo đề thi</a></li>
-                    <li class="breadcrumb-item">Chi tiết</li>
-                </ol>
+            <div class="col-md-4">
             </div>
-            <div class="panel panel-default panel-question">
-                <div class="panel-heading">
-                    <h1>TOEIC 100</h1>
+            <div class="form-group col-md-4 login-form ">
+                <h3>Đăng nhập</h3>
+                <div class="input-group">
+                    <input type="text" id="user-name" class="form-control" placeholder="Swift.ios">
+                    <input type="password" id="user-pwd" class="form-control" placeholder="*********">
                 </div>
-                <div class="panel-body">
-                    <div class="fixed-action">
-                        <a id="fab" data-toggle="tooltip"><span class="glyphicon glyphicon-pencil fab"> </a>
-                        <ul id="fab-toggle" class="hidden">
-                            <li><a id="add-question"><span class="glyphicon glyphicon-plus add-question"> </a></li>
-                            <li><a id="remove-question"><span class="glyphicon glyphicon-remove remove-question"> </a></li>
-                            <li><a href="preview.html" id="review-question"><span class="glyphicon glyphicon-play review-question"> </a></li>
-                            <li><a href="complete.html" id="done-question"><span class="glyphicon glyphicon-ok done-question"> </a></li>
-                        </ul>
-                    </div>
-                    <div id="content">
-
-                    </div>
-
+                <div class="button-group">
+                    <button id="login">Đăng nhập</button>
+                    <button id="remember">Quên mật khẩu ?</button>
+                    <button id="signin">Đăng kí</button>
                 </div>
             </div>
+
+        </article>
+
     </div>
     <div class="row footer-page">
         <p>BK Maker copyright 2017</p>
     </div>
-    </article>
-    <script src="../../js/myscript.js"></script>
+    <script>
+        CKEDITOR.replace("note");
+    </script>
 </body>
 
 </html>

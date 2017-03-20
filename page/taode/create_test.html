@@ -10,6 +10,7 @@
     <script src="../../js/jquery-3.1.1.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
     <script src="../../plugin/ckeditor/ckeditor.js"></script>
+    <link href="../../css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/taode.css" rel="stylesheet">
 </head>
@@ -24,7 +25,11 @@
                     <span class="icon-bar"></span> 
                 </button>
                 <h1 class="title-page">
-                    <a href="../../index.html"><img src="../../images/2.jpg" alt="images" width="70px" height="70px" class="img-circle">BK Maker</a>
+
+
+                    <a href="../../index.html"><img src="../../images/2.jpg" alt="images" width="70px" height="70px" class="img-circle"><span>BK Maker</span></a>
+
+
                 </h1>
 
             </div>
@@ -38,8 +43,9 @@
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav">
-                                <li><a href="../../index.html"><span class="glyphicon glyphicon-home"></span>Trang chủ</a></li>
-                                <!--<li class="dropdown">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="../../index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;Trang chủ</a></li>
+                                    <!--<li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Đề thi
                                 <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -48,15 +54,15 @@
                                         <li><a href="#">Đề số 3</a></li>
                                     </ul>
                                 </li>-->
-                                <li><a href="create_test.html">Tạo đề thi</a></li>
-                                <li><a href="#">Kho đề</a></li>
-                                <li><a href="#">Quản lí đề thi</a></li>
-                            </ul>
-                            <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="create_test.html"><i class="fa fa-book" aria-hidden="true"></i>&nbsp; Tạo đề thi</a></li>
+                                    <li><a href="#">Kho đề</a></li>
+                                    <li><a href="#">Quản lí đề thi</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
 
-                                <li><a href="#" class="login"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
-                                <li><a href="#" class="signin"><span class="glyphicon glyphicon-user"></span> Đăng kí</a></li>
-                            </ul>
+                                    <li><a href="../nguoidung/login.html" class="login"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+                                    <li><a href="../nguoidung/signin.html" class="signin"><span class="glyphicon glyphicon-user"></span> Đăng kí</a></li>
+                                </ul>
                         </div>
                     </div>
                 </nav>
@@ -92,13 +98,18 @@
                                 </select>
                         </div>
                         <div class="form-group">
+                            <label for="time">Thời gian <sup style="color: red;"> (*) </sup></label>
+                            <input type="number" class="form-control" id="time">
+
+                        </div>
+                        <div class="form-group">
                             <label for="note">Ghi chú</label>
                             <textarea class="form-control" id="note" rows="3"></textarea>
                         </div>
 
                     </div>
                     <div class="panel-footer">
-                        <button type="submit" id="submit" class="btn btn-primary">Hoàn thành</button>
+                        <button type="submit" id="submit" class="btn btn-primary btn-style">Hoàn thành</button>
                     </div>
                 </form>
             </div>
