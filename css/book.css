@@ -76,15 +76,19 @@ nav,
 
 
 /*END HEADER*/
+
+
 /*
 body {
     background-color: #eee;
 }*/
+
+
 /*
 -------------------------------------------BOOK - BOOK GRID---------------------------------
 */
 
-.content-info{
+.content-info {
     margin-left: 15px;
 }
 
@@ -208,6 +212,7 @@ body {
 
 .search-box-nav {
     padding: 8px;
+    width: 300px;
 }
 
 .dropdown.dropdown-lg .dropdown-menu {
@@ -244,19 +249,22 @@ body {
     border-bottom-left-radius: 4px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     #adv-search {
         width: 300px;
         /*
         margin: 0 auto;
 */
     }
-    .dropdown.dropdown-lg {
+    .fancy {
+        display: none !important;
+    }
+    /*.dropdown.dropdown-lg {
         position: static !important;
     }
     .dropdown.dropdown-lg .dropdown-menu {
         min-width: 300px;
-    }
+    }*/
 }
 
 
@@ -321,7 +329,7 @@ body {
     margin-left: 15px;
 }
 
-.category-hot-today{
+.category-hot-today {
     margin-top: -60px;
 }
 

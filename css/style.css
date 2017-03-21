@@ -65,7 +65,7 @@ body {
     text-decoration: none;
     cursor: pointer;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
     word-spacing: 8px;
@@ -222,13 +222,6 @@ body {
     padding-left: 30px;
 }
 
-.footer-page {
-    margin: 0;
-    min-height: 100px;
-    background-color: #1C2331;
-    border-bottom: 5px solid #7CB342;
-}
-
 .footer-page p {
     color: #fff;
     text-align: center;
@@ -371,14 +364,35 @@ body {
 .footer-page {
     margin: 0;
     min-height: 100px;
-    background-color: #363636;
-    border-bottom: 5px solid #5C3566;
+    background-color: #3D4752;
+    /*box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;*/
 }
 
-.footer-page p {
-    color: #fff;
+.footer-page h3 {
+    color: #eee;
+    text-transform: uppercase;
+}
+
+.footer-page ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-page ul li a,
+.footer-page .copy-right a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-page ul li a:hover {
+    color: #2BBBAD;
+}
+
+.footer-page .copy-right {
     text-align: center;
-    margin-top: 10px;
+    border-top: 1px solid #eeeeee;
+    padding: 25px;
 }
 
 .carousel {
