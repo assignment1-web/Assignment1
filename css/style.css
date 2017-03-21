@@ -15,23 +15,17 @@ body {
     .title-page {
         text-align: center;
     }
-    .content-page {
-        margin: -15px 0;
-        padding: 0;
-        background-color: #fff;
-    }
-    .glyphicon-plus-sign {
-        font-size: 30px;
-    }
-    .add_test {
-        padding: 10px;
+}
+
+@media screen and (max-width: 990px) and (min-width: 768px) {
+    .title-page {
         text-align: center;
-        color: #fff;
-        border-radius: 100%;
-        background-color: #0092DF;
-        position: fixed;
-        top: 150px;
-        left: 92%;
+    }
+    .main-page {
+        margin-top: 140px;
+    }
+    .header-index {
+        margin-top: 197px;
     }
 }
 
