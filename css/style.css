@@ -27,6 +27,9 @@ body {
     .header-index {
         margin-top: 197px;
     }
+    .fancy {
+        display: none !important;
+    }
 }
 
 .nav-custom {
