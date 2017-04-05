@@ -267,6 +267,12 @@ body {
     }*/
 }
 
+@media screen and (max-width: 990px) and (min-width: 778px) {
+    .fancy {
+        display: none !important;
+    }
+}
+
 
 /*--------------------------------------END SEARCH-------------------------------------*/
 
